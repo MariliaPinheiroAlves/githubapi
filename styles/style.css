@@ -187,3 +187,25 @@ main {
 .container .profile-data.hide {
   display: none;
 }
+
+.not-found {
+  align-items: center;
+  padding: 40px 80px;
+  border-radius: 5px;
+}
+
+.not-found span {
+  text-align: center;
+  color: #fff;
+  font-family: "Dosis", sans-serif;
+  font-size: 100px;
+  font-weight: 800;
+}
+
+.not-found p {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+}
