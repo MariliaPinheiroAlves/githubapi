@@ -1,2 +1,2 @@
 # githubapi
-<p><img width="460" src="/githubapi.gif"></p>
+<p align="center"><img width="460" src="/githubapi.gif"></p>
