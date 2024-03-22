@@ -3,17 +3,17 @@
   <img width="460" src="/githubapi.gif">
 </p>
 
-## Descrição
+### Descrição
 
 O projeto tem como objetivo fornecer exemplos de como fazer chamadas à API do GitHub para obter informações sobre usuários, repositórios e muito mais. Ele pode ser usado como ponto de partida para o desenvolvimento de aplicativos mais complexos que interajam com a plataforma GitHub.
 
-## Funcionalidades
+### Funcionalidades
 
 - Busca de um usuário específico
 - Listagem de repositórios de um usuário
 - Link até um repositório específico
 
-## Instalação
+### Instalação
 
 1. **Clone o repositório:**
 
