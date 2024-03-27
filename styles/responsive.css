@@ -24,6 +24,7 @@
   .section {
     padding-top: 40px;
     margin-top: 30px;
+    width: 80%;
   }
 
   .container .profile-data .info img {
@@ -40,17 +41,25 @@
     padding: 15% 0;
   }
 
+  .section {
+    width: 60%;
+  }
+
   .container .profile-data .info img {
     margin-bottom: 20px;
   }
 
   .container .profile-data .info img,
   .container .profile-data .info .data {
-    width: 100%;
+    width: 60%;
     padding: 0;
   }
 
   .not-found {
-  padding: 20px 40px;
-}
+    padding: 20px 40px;
+  }
+
+  .container .profile-data .events ul {
+    padding: 10px;
+  }
 }

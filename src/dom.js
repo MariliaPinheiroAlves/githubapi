@@ -1,4 +1,11 @@
-import { getUserProfile } from "./scripts/index.js";
+import { getUserData } from "./scripts/index.js";
+
+const validateEmptyInput = (userName) => {
+  if (userName.length === 0) {
+    alert('Preencha o campo com o nome do usuário do GitHub');
+    return true
+  }
+}
 
 const handleInputKeyUp = (e) => {
   const userName = e.target.value;
@@ -6,13 +13,17 @@ const handleInputKeyUp = (e) => {
   const isEnterKeyPressed = key === 13;
 
   if (isEnterKeyPressed) {
-    getUserProfile(userName);
+    if (validateEmptyInput(userName)) return;
+    getUserData(userName);
   }
 };
 
 const getInputElementValue = () => {
   const userName = document.getElementById('input-search').value;
-  return getUserProfile(userName);
+
+  if(validateEmptyInput(userName)) return;
+
+  return getUserData(userName);
 };
 
 export { getInputElementValue, handleInputKeyUp }

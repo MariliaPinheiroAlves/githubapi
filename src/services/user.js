@@ -4,9 +4,7 @@ import { screen } from "../objects/screen.js";
 const getUser = async (userName) => {
   const response = await fetch(`${baseUrl}/${userName}`);
 
-  if(response.status === 404) {
-    screen.renderNotFound()
-  }
+  if(response.status === 404) return screen.renderNotFound();
 
   return response.json();
 };
