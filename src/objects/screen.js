@@ -30,9 +30,9 @@ const screen = {
         `<ul class='repo'>
           <li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>
           <ul class='repos-info'>
-            <li>🍴 ${repo.forks}</li>
-            <li>⭐ ${repo.watchers}</li>
-            <li>👀 ${repo.stargazers_count}</li>  
+            <li>🍴 ${repo.forks === 0 ? '': repo.forks}</li>
+            <li>⭐ ${repo.watchers === 0 ? '' : repo.watchers}</li>
+            <li>👀 ${repo.stargazers_count === 0 ? '' : repo.stargazers_count}</li>  
             <li>💻 ${repo.language ?? ''}</li>
           </ul>
         </ul>`
